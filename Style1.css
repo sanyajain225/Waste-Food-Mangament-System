@@ -1,0 +1,103 @@
+body{
+    font-family: 'Baloo Bhaina 2', cursive;
+    margin: 0px;
+    padding: 0px;
+    background: url("https://www.vmcdn.ca/f/files/sasktoday/images/food/gettyimages-food-drive.jpeg");   
+    height: 100vh;
+    background-position: center;
+}
+.image-container{
+    width: 100%;
+    overflow: hidden;
+} 
+.floating-image{
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: auto;  
+    margin-bottom: 30px;
+    image-rendering: crisp-edges;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.left{
+    display: inline-block;
+    color: white;
+    padding: 20px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    margin: black;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+.left img{
+    width: 136px;    
+}
+.left div{
+    line-height: 10px;
+    font-size: 26px ;
+    text-align: center;
+    border: black;
+}
+.mid{
+    display: block;
+    width: 50%;
+    margin:50px  auto;
+    color: rgb(247, 242, 242);
+}
+.right{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: inline-block;
+    color: white;
+}
+.navbar{
+    display: inline-block;    
+}
+.navbar li{
+    display: inline-block;
+    font-size: 29px ;
+    /* background-color: black; */
+    font-family: 'Baloo Bhaina 2', cursive;   
+}
+.navbar li a{
+    color: rgb(250, 249, 249);
+    text-decoration: underline;
+    padding:  20px; 
+    top: 10px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-weight: bold;
+    
+}
+.navbar li a:hover, .navbar li a.active{
+    text-decoration: underline;
+    color: rgb(123, 45, 33);
+    text-align: center;
+    top: 100px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 29px;
+    font-weight: bold;
+    margin-top: 10px;
+  
+
+}
+.btn{
+    font-family: 'Baloo Bhaina 2', cursive;
+    margin: 0px;
+    background-color: black;
+    color: rgb(240, 239, 245);
+    padding: 4px 20px;
+    border: 2px solid black; 
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: black underline;
+}
+.btn:hover{
+    background-color: rgb(178, 14, 14);
+}
+
+.form-group input{
+    border: black;
+
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIET Library Bookshop</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2cca3;
+    }
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin: black;
+      margin-top: 8px;
+      margin-left: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    }
+    h1 {
+      font-family: Arial, sans-serif;
+      margin-top: 20px;
+        margin-right: 450px;
+        font-size: 45px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    p{
+        font-size: 25px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f2cca3;
+      padding: 10px;
+    }
+    .right-frame {
+      width: 75%;
+      height: 80vh;
+     background-color: #f9eada;
+    }
+    .navigation{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    .navigation a{
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        border: 1px solid black ;
+        border-radius: 5px;
+        margin: 0 5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .navigation a:hover{
+        color: rgb(195, 62, 62);
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .branchlist{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .branchlist li{
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.jo6Fxw9Vp1uQ2fhSuu8dkgHaHa&pid=Api&P=0&h=180" alt="Website Logo" class="logo">
+      <h1>MIET Library Bookshop</h1>
+    </div>
+
+
+  <table>
+    <tr class="navigation">
+      <td>
+        <a href="#" onclick="displayContent('homeContent')">Home</a>
+        <ul class="branchlist">
+          <li><a href="#" onclick="displayContent('cseContent')">CSE</a></li>
+          <li><a href="#" onclick="displayContent('eeContent')">EE</a></li>
+          <li><a href="#" onclick="displayContent('meContent')">ME</a></li>
+          <li><a href="#" onclick="displayContent('civilContent')">CIVIL</a></li>
+          <li><a href="#" onclick="displayContent('ecContent')">EC</a></li>
+          <li><a href="#" onclick="displayContent('csContent')">CS</a></li>
+          <li><a href="#" onclick="displayContent('cheContent')">ChE</a></li>
+          <li><a href="#" onclick="displayContent('auContent')">AU</a></li>
+          <li><a href="#" onclick="displayContent('ineContent')">InE</a></li>
+
+        </ul>
+      </td>
+      <td><a href="#" onclick="displayContent('loginContent')">Login</a></td>
+      <td><a href="#" onclick="displayContent('RegistrationContent')">Registration</a></td>
+      <td><a href="#" onclick="displayContent('catalogContent')">Catalog</a></td>
+      <td><a href="#" onclick="displayContent('cartContent')">Cart</a></td>
+      <td class="right-frame" id="rightFrame">
+        
+        <h2>Welcome to MIET Library Bookshop!</h2>
+        <p>This is the initial content. Select a branch or click on other links to view details.</p>
+      </td>
+    </tr>
+  </table>
+
+  <script>
+    function displayContent(contentId) {
+      var content = document.getElementById(contentId).innerHTML;
+      document.getElementById('rightFrame').innerHTML = content;
+    }
+  </script>
+
+  
+  <div style="display: none;">
+    <div id="homeContent">
+      <h2>MIET Library - B.Tech Branches</h2>
+      <p>Click on a branch to explore books.</p>
+    </div>
+
+    <div id="cseContent">
+      <h2>Computer Science and Engineering</h2>
+      <p>Books and resources for Computer Science branch.</p>
+    </div>
+
+    <div id="eeContent">
+      <h2>Electrical Engineering</h2>
+      <p>Books and resources for Electrical  branch.</p>
+    </div>
+
+    <div id="meContent">
+      <h2>Mechanical Engineering</h2>
+      <p>Books and resources for Mechanical branch.</p>
+    </div>
+
+    <div id="civilContent">
+        <h2>Civil Engineering</h2>
+        <p>Books and resources for Civil branch.</p>
+      </div>
+
+      <div id="ecContent">
+        <h2>Electronics and Communication Engineering</h2>
+        <p>Books and resources for Electronics and Communication branch.</p>
+      </div>
+
+      <div id="csContent">
+        <h2>Computer Science and Information Technology</h2>
+        <p>Books and resources for Computer Science and Information Technology branch.</p>
+      </div>
+
+      <div id="cheContent">
+        <h2>Chemical Engineering</h2>
+        <p>Books and resources for Chemical branch.</p>
+      </div>
+
+      <div id="auContent">
+        <h2>Automobile Engineering</h2>
+        <p>Books and resources for Automobile branch.</p>
+      </div>
+
+      <div id="ineContent">
+        <h2>Instrumentation Engineering</h2>
+        <p>Books and resources for Instrumentation branch.</p>
+      </div>
+
+    <div id="loginContent">
+      <h2>Login</h2>
+      <p>Login to your account for personalized services.</p>
+    </div>
+
+    <div id="RegistrationContent">
+        <h2>Registration</h2>
+        <p>Create an Account to access additional features.</p>
+      </div>
+
+    <div id="catalogContent">
+      <h2>Catalog</h2>
+      <p>Explore our catalog to find your favorite books.</p>
+    </div>
+
+    <div id="cartContent">
+      <h2>Cart</h2>
+      <p>Your shopping cart is currently empty.</p>
+    </div>
+  </div>
+</body>
+</html>

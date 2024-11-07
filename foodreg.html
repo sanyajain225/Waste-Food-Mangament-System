@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h2{
+        font-size: 35px;
+    }
+
+    .registration-form {
+      max-width: 500px;
+      margin: 20px auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #333;
+      width: 100%;
+    }
+
+    input, select,textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    input[type="date"] {
+      width: calc(100% ); 
+    }
+
+    .required {
+      color: red;
+    }
+    #expiryDate , #foodType , #perishable {
+        font-size: 16px;
+    }
+    .left{
+    display: inline-block;
+    color: white;
+    padding: 20px;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+
+}
+.left img{
+    width: 136px;    
+}
+.left div{
+    line-height: 10px;
+    font-size: 26px ;
+    text-align: center;
+    border: black;
+}
+
+    button {
+      background-color: #52be56;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    button:hover {
+      background-color: #2d6630;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="left">
+        <img src="https://cdn6.f-cdn.com/contestentries/71785/10232480/535305ddb3cbf_thumbCard.jpg" alt="Website Logo" >
+      
+      </div>
+  <div class="registration-form" id="registrationForm" onsubmit="redirectToAnotherPage(); return false;">
+    <h2>Food Order Registration</h2>
+    <form action="#" method="post">
+      <label for="foodName">Food Name <span class="required">*</span></label>
+      <input type="text" id="foodName" name="foodName" required>
+
+      <label for="quantity">Quantity <span class="required">*</span></label>
+      <input type="number" id="quantity" name="quantity" required>
+
+      <label for="foodDescription">Food Description <span class="required">*</span></label>
+      <textarea id="foodDescription" name="foodDescription" rows="4" required></textarea>
+
+      <label for="expiryDate">Food Expiry Date (dd/mm/yyyy) <span class="required">*</span></label>
+      <input type="date" id="expiryDate" name="expiryDate" required>
+
+      <label for="foodType">Food Type <span class="required">*</span></label>
+      <select id="foodType" name="foodType" required>
+        <option value="veg">Veg</option>
+        <option value="nonveg">Non-Veg</option>
+      </select>
+
+      <label for="perishable">Perishable? <span class="required">*</span></label>
+      <select id="perishable" name="perishable" required>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script>
+    function redirectToAnotherPage() {
+      // Add form validation logic here if needed
+      // For this example, we'll directly redirect to another HTML file
+      window.location.href = 'thanku.html'; // Replace with the file path of the HTML file you want to redirect to
+    }
+  </script>
+</body>
+</html>

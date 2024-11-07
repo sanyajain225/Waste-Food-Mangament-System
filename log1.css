@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:url("https://npr.brightspotcdn.com/dims4/default/06a3eb5/2147483647/strip/true/crop/3000x2000+0+0/resize/880x587!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F31%2F5b%2Fcc7cc0b042b7b54623e657545f78%2Fgettyimages-1286048476x.jpg");
+    background-position: center;
+    background-size: cover ;
+    background-repeat: no-repeat;
+width: 100%;
+
+}
+.left{
+    display: inline-block;
+    color: white;
+    padding: 20px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    margin: black;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+.left img{
+    width: 136px;    
+}
+.left div{
+    line-height: 10px;
+    font-size: 26px ;
+    text-align: center;
+    border: black;
+}
+
+.login-container {
+    background-color: #939090;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #efaa5a;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 49%;
+    margin-top: 20px;
+    margin-bottom: 20px;  
+    font-size: 17px;
+}
+
+button:hover {
+    background-color: #a06e45;
+
+    
+}

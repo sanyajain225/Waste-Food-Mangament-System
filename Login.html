@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="log1.css">
+</head>
+<body>
+
+    <div class="left">
+        <img src="https://cdn6.f-cdn.com/contestentries/71785/10232480/535305ddb3cbf_thumbCard.jpg" alt="Website Logo" >
+      
+      </div>
+
+<div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm" onsubmit="return validateForm()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit"><a href="Index1.html">Login </button></a>
+        <button type="register"><a href="mini project.html">Register</button></a>
+    </form>
+</div>
+
+
+<script>
+    
+    function validateForm() {
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+
+        if (username === "" || password === "") {
+            alert("Both username and password are required");
+            return false;
+        }
+        return true;
+    }
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      console.log('Username:', username);
+      console.log('Password:', password);
+    });
+
+</script>
+
+</body>
+</html>
